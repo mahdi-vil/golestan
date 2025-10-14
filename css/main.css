@@ -1,0 +1,68 @@
+@font-face {
+    font-family:vazir ;
+    src: url("../fonts/Vazir-Regular.woff") format("woff");
+}
+body{
+    font-family: vazir;
+}
+.img_nav{
+    width: 109px ;
+    height: 75px;
+}
+.text_nav{
+    width: 32px;
+    height: 32px;
+    
+}
+.text_nav:hover{
+    border: 1px solid black;
+}
+.text_nav_a{
+      width: 115px;
+      height: 50px;
+      font-weight: bold;
+      transition: 100ms all 0s;
+}
+.text_nav_a:hover{
+    border-bottom: 2px solid rgb(48, 89, 255);
+     color: rgb(48, 89, 255) ;
+    box-shadow: 1px 0px 5px rgba(228, 228, 228, 0.896) ,-1px -0px 5px rgba(228, 228, 228, 0.896);
+}
+.text_dasteh:hover{
+    color: rgb(48, 89, 255) ;
+}
+.sub_nav{
+position: relative;
+}
+.ul_sub{
+position: absolute;
+display:none ;
+margin-left: -25ch;
+}
+.li_sub{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 340px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+
+}
+.a_sub{
+    font-size: 15px;
+    width: 100%;
+    display: flex;
+       justify-content: end;
+    align-items: end;
+    height: 35px;
+
+}
+.a_sub:hover{
+    background-color: rgb(72, 164, 195);
+    border-radius: 5px;
+    border-bottom: 3px solid rgb(38, 66, 158) ;
+}
+.sub_d:hover .ul_sub{
+    display: block;
+}
