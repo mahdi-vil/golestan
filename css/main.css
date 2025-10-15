@@ -2,8 +2,32 @@
     font-family:vazir ;
     src: url("../fonts/Vazir-Regular.woff") format("woff");
 }
+@media all and (max-width: 991px) {
+    .searchtype_js{
+    width: 99%; height: 99vh;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+}
+    .search_in{
+    width: 90%; height: 40px;
+}
+}
+@media all and (min-width: 992px) {
+    .searchtype_js{
+    width: 99%; height: 99vh;
+    background-color: rgba(255, 255, 255, 0.674);
+    position: absolute;
+    top: 0;
+}
+.search_in{
+    width: 45%; height: 35px;
+}
+}
+
 body{
     font-family: vazir;
+    position: relative;
 }
 .img_nav{
     width: 109px ;
