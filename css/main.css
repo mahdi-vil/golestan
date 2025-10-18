@@ -5,12 +5,18 @@
 @media all and (max-width: 991px) {
     .searchtype_js{
     width: 99%; height: 99vh;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.7);
     position: absolute;
     top: 0;
 }
     .search_in{
     width: 90%; height: 40px;
+}
+.list_js{
+    width: 99%; height: 99vh;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 0;
 }
 }
 @media all and (min-width: 992px) {
@@ -27,7 +33,6 @@
 
 body{
     font-family: vazir;
-    position: relative;
 }
 .img_nav{
     width: 109px ;
@@ -39,13 +44,14 @@ body{
     
 }
 .text_nav:hover{
-    border: 1px solid black;
+    border: 2px solid black;
 }
 .text_nav_a{
       width: 115px;
       height: 50px;
       font-weight: bold;
-      transition: 100ms all 0s;
+      transition: .2s 
+ease-in-out;
 }
 .text_nav_a:hover{
     border-bottom: 2px solid rgb(48, 89, 255);
@@ -59,34 +65,29 @@ body{
 position: relative;
 }
 .ul_sub{
-position: absolute;
-display:none ;
 margin-left: -25ch;
 }
 .li_sub{
     background-color: rgb(255, 255, 255);
-    display: flex;
     width: 340px;
     height: 45px;
-    justify-content: center;
-    align-items: center;
     padding: 2px;
 
 }
 .a_sub{
     font-size: 15px;
     width: 100%;
-    display: flex;
-       justify-content: end;
-    align-items: end;
     height: 35px;
 
 }
 .a_sub:hover{
-    background-color: rgb(72, 164, 195);
+    background-color: #ade4ffab;
     border-radius: 5px;
-    border-bottom: 3px solid rgb(38, 66, 158) ;
+    border-bottom: 3px solid #6A89CC ;
 }
 .sub_d:hover .ul_sub{
+    display: block;
+}
+.li_sub_sub:hover .li_ul_sub{
     display: block;
 }
