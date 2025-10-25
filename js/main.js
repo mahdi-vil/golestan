@@ -50,3 +50,33 @@ docmeh_user[3].addEventListener("click",function(){
     
 });
 // end-user-sm&lg
+// start-slid-img-zir-nav
+
+    let left = document.querySelector(".left-dokmeh");
+    let right = document.querySelector(".right-dokmeh");
+    let img_slide = document.querySelectorAll(".img-slide");
+    let z_img = document.querySelectorAll(".z-div")
+    let img_source = ["images/1.jpeg","images/2.jpeg","images/3.jpeg","images/4.jpeg","images/5.jpeg"];
+    let counter = 0;
+    right.addEventListener("click",function(){
+        counter++;
+        if(counter>4){
+            counter=0
+        }
+        // z_img[4].setAttribute("class",`z-${counter}`)
+        // img_slide[4].setAttribute("class",`-ml-4`)
+        img_slide[2].setAttribute("src",img_source[counter])
+    });
+    left.addEventListener("click",function(){
+        counter--;
+        if(counter<0){
+            counter=4
+        }
+        //  z_img[4].setAttribute("class",`z-${counter}`)
+        // img_slide[4].setAttribute("class",`ml-4`)
+        img_slide[2].setAttribute("src",img_source[counter])
+    });
+
+
+
+// end-slid-img-zir-nav

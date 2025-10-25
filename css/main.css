@@ -19,6 +19,18 @@
     top: 0;
 }
 }
+@media all and (min-width:768px) and (max-width:991px){
+
+    .delete{
+        display: block;
+    }
+}
+@media all and (min-width:500px) and (max-width:746px){
+
+    .delet{
+        display: block;
+    }
+}
 @media all and (min-width: 992px) {
     .searchtype_js{
     width: 99%; height: 99vh;
